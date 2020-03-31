@@ -13,7 +13,7 @@
   width: 100%;
   height: 100vh;
   background-image: url("images/tajmahal.jpg");
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,7 +32,7 @@ nav .logo {
   text-align: center;
 }
 nav .menu {
-  /*width: 40%;*/
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
@@ -42,6 +42,11 @@ nav .menu a {
   color: white;
   font-weight: bold;
 }
+nav .menu a{
+  padding: .25rem;
+  font-size: 15px;
+}
+
 nav .menu a:first-child {
   color: #00b894;
 }
@@ -54,66 +59,117 @@ main {
   text-align: center;
 }
 section h3 {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 200;
   letter-spacing: 3px;
   text-shadow: 2px 1px 5px black;
 }
 section h1 {
-  margin: 30px 0 20px 0;
-  font-size: 55px;
+  margin: 2rem 0 1rem 0;
+  font-size: 30px;
   font-weight: 700;
   text-shadow: 2px 1px 5px black;
   text-transform: uppercase;
 }
 section p {
-  margin: 0 0 25px 0;
+  margin: 0 0 1.265rem 0;
   font-size: 25px;
   word-spacing: 25px;
   text-shadow: 1px 1px 1px black;
 }
 section a {
-  padding: 12px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   outline: none;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: .97;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 1px;
-  transition:all .5s ease;
+  transition: all 0.5s ease;
 }
 section .btnone {
   background: white;
   color: #000;
 }
-.btnone:hover{
-   background: #00b894;
+.btnone:hover {
+  background: #00b894;
   color: #fff;
 }
 section .btntwo {
   background: #00b894;
   color: #fff;
 }
-.btntwo:hover{
-    background: white;
-    color: #000
+.btntwo:hover {
+  background: white;
+  color: #000;
 }
 .change_contain:after {
   content: "";
   animation: changetext 10s infinite linear;
-  color:#00b894 ;
+  color: #00b894;
 }
-@keyframes changetext{
-    0%{ content: "Darjeeling";}
-    20%{ content: "Agra";}
-    35%{ content: "Jaipur";}
-    60%{ content: "Kerala";}
-    80%{ content: "Delhi";}
-   100%{ content: "Mumbai";}
+@keyframes changetext {
+  0% {
+    content: "Darjeeling";
+  }
+  20% {
+    content: "Agra";
+  }
+  35% {
+    content: "Jaipur";
+  }
+  60% {
+    content: "Kerala";
+  }
+  80% {
+    content: "Delhi";
+  }
+  100% {
+    content: "Mumbai";
+  }
+}
+@media(max-width:1000px){
+  .inner{
+  background-image: url("images/tajmahal2.jpg");
+}
+ 
+  nav .menu {
+  display: flex;
+  flex-direction: column;
+}
+.button_container{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+/*section h1 {*/
 
+section .btnone{
+  margin-bottom: 1rem;
 }
-@media screen {
-  
+
+
+section h3 {
+  font-size:25px;
 }
-    
+section h1 {
+  font-size: 45px;
+}
+.heart-beat{
+  margin:0.25rem;
+}
+}
+@media(max-width:320px){
+  nav .menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav .menu a{
+  padding: .25rem;
+  /*margin-top:.125rem;*/
+  font-size: 15px;
+}
+}
