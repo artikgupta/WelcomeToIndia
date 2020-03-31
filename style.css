@@ -31,6 +31,10 @@ nav .logo {
   width: 25%;
   text-align: center;
 }
+.logo h1{
+  font-size: 1.1rem;
+
+}
 
 nav .menu {
   width: 40%;
@@ -130,7 +134,7 @@ section .btntwo {
     content: "Mumbai";
   }
 }
-@media(max-width:1000px){
+@media(max-width:1200px){
   .inner{
   background-image: url("images/tajmahal2.jpg");
 }
@@ -167,6 +171,21 @@ section h1 {
   margin:0.25rem;
 }
 }
+
+@media(max-width:800px){
+  nav .menu {
+  display: flex;
+  width:50%;
+  /*overflow: hidden;*/
+  /*flex-direction: column;*/
+  text-align: center;
+  }
+  nav .menu a{
+  font-size:10px;
+  padding-left:1.5rem
+}
+}
+
 @media(max-width:320px){
   nav .menu {
   display: flex;
@@ -178,6 +197,6 @@ section h1 {
 
 nav .menu a{
   font-size:8px;
-  padding: .25rem
+  padding-left:1.5rem
 }
 }
