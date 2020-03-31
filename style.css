@@ -135,12 +135,12 @@ section .btntwo {
   background-image: url("images/tajmahal2.jpg");
 }
  
-  nav .menu {
+  /*nav .menu {
   display: flex;
   overflow: hidden;
-  /*flex-direction: column;*/
+  /*flex-direction: column;
   width: 50%;
-}
+}*/*/
 /*nav .menu a{
   font-size: 2px;
 }*/
