@@ -200,3 +200,23 @@ nav .menu a{
   padding-left:1.5rem
 }
 }
+@media(max-width:750px){
+   nav .menu {
+  display: flex;
+  width:50%;
+  /*overflow: hidden;*/
+  /*flex-direction: column;*/
+  text-align: center;
+}
+
+nav .menu a{
+  font-size:8px;
+  padding-left:1rem;
+
+}
+.logo h1{
+  /*padding: .5rem;*/
+  margin:.5rem;
+  font-size: 13px;
+}
+}
