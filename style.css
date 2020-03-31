@@ -170,6 +170,7 @@ section h1 {
 @media(max-width:320px){
   nav .menu {
   display: flex;
+  width:60%;
   /*overflow: hidden;*/
   /*flex-direction: column;*/
   text-align: center;
